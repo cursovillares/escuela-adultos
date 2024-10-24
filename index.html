@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css
-    ">
-    <title>Prueba</title>
+    <title>Página con Video e Imagen</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Juega o muere</h1>
-    <h2>Prueba</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quia sed dicta numquam corporis sapiente! Eius eveniet ea nihil, expedita excepturi rem, cumque exercitationem quo recusandae quod nam culpa ipsa!</p>
+    <div class="container">
+        <div class="content">
+            <h1>Título de la Página</h1>
+            <p>Este es un párrafo que se ocultará cuando comience el video.</p>
+    
+            <button id="playVideoButton">Abrir Video</button>
+        </div>
+
+        <div id="videoContainer" class="hidden">
+            <video id="video" width="640" height="360" controls>
+                <source src="video/halloween.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+  
+        <div id="imageButtonContainer" class="hidden">
+            <button id="showImageButton">Mostrar Imagen</button>
+        </div>
+
+        <div id="imageContainer" class="hidden">
+            <img id="image" src="img/Biblioteca.jpg" alt="Imagen">
+            <button id="closeImageButton">Volver a Inicio</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
