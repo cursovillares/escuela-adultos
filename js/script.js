@@ -27,6 +27,12 @@ showImageButton.addEventListener('click', () => {
     imageButtonContainer.classList.add('hidden');  // Ocultar el botón de mostrar imagen
 });
 
+// Al hacer clic en el botón para mostrar la imagen
+showImageButton.addEventListener('click', () => {
+    imageContainer.classList.remove('hidden');  // Mostrar la imagen
+    imageButtonContainer.classList.add('hidden');  // Ocultar el botón de mostrar imagen
+});
+
 // Al hacer clic en el botón para reproducir el video
 playVideoButton.addEventListener('click', () => {
     content.classList.add('hidden');  // Ocultar el título y el párrafo
